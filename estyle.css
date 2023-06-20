@@ -29,3 +29,9 @@ img {
     height: 70px;
     margin: 5%;
 }
+.animada {
+    transition: transform 0.5s ease;
+}
+.animada:hover {
+    transform: scale(5.05);
+}
