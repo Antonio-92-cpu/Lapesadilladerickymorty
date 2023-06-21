@@ -1,4 +1,50 @@
 body {
+    font-family: Arial, sans-serif;
+  }
 
-    background-color: black;
-}
+  h1 {
+    text-align: center;
+  }
+
+  input[type="text"],
+  button {
+    margin: 10px;
+  }
+
+  #character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .character-card {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .character-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .character-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .character-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  nav {
+      display:flex;
+      align-content:center;
+      justify-content:center;
+      flex-direction: row;
+      
+
+  }
+  
