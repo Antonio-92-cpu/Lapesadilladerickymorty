@@ -1,29 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estyle.css">
-
-    <title>LaPesadilladeRickyMorty</title>
+  <title>API de Rick and Morty</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
 <body>
-    <div class="contenedor">
-        
-        <img src="Imagenes/Rick.jfif" alt="imagen animada" class="animada">
-        
-        <img src="Imagenes/Morty.jfif">
-        
-        <img src="Imagenes/Beth Smith(madre).jfif">
-</div>
-<div class="contenedor1">
-    <img src="Imagenes/jerry_smith(padre).png">
-    <img src="Imagenes/summer smith (hermana).jpg">
-</div>
+  <h1>Personajes de Rick and Morty</h1>
+  <input type="text" id="search-input" placeholder="Buscar por nombre">
+  <button id="search-button">Buscar</button>
 
-    <script src="estyle.js"></script>
+  <div id="character-list"></div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
