@@ -47,4 +47,34 @@ body {
       
 
   }
+
+      /* Agregado: Definición de la animación de zoom en hover */
+      .character-card:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+  
+      /* Agregado: Estilos para el pop-up */
+      .character-card.active {
+        z-index: 999;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.5);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+  
+      /* Agregado: Estilos para el pop-up de la imagen */
+      .character-card.active img {
+        width: 100%;
+        height: auto;
+      }
+  
+      /* Agregado: Estilos para el pop-up de los textos */
+      .character-card.active h2,
+      .character-card.active p {
+        margin: 10px 0;
+      }
   
