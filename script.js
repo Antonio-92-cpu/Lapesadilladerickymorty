@@ -56,3 +56,7 @@ function fetchCharacters() {
 }
 
 fetchCharacters();
+
+document.getElementById("reset-button").addEventListener('click', fetchCharacters); 
+
+
