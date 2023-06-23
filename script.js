@@ -26,10 +26,17 @@ function searchCharacters() {
   if (characterName !== '') {
     fetch(`https://rickandmortyapi.com/api/character/?name=${characterName}`)
       .then(response => response.json())
-      .then(data => displayCharacters(data.results))
-      .catch(error => console.log(error));
+      .then(data => {
+     if (data.error) {
+          alert('No se han encontraron personajes con ese nombre.');
+        } else {
+          displayCharacters(data.results);
+        }
+      })
+      .catch(error => alert);
   }
 }
+
 
 function displayCharacters(characters) {
   characterList.innerHTML = '';
