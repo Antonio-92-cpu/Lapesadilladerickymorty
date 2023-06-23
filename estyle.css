@@ -12,9 +12,6 @@ body {
   button {
     margin: 10px;
   }
- #reset-button {
-  
- }
 
   #character-list {
     display: flex;
