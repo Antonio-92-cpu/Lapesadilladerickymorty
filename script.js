@@ -14,9 +14,18 @@ function closeDialog(id) {
   });
 }
 
+const botoncierre = document.getElementById('entrarclose');
+const cierre = document.getElementById('popup');
+botoncierre.addEventListener('click',() => {
+  cierre.classList.add("pop")
+
+});
+
+
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 const characterList = document.getElementById('character-list');
+
 
 searchButton.addEventListener('click', searchCharacters);
 
