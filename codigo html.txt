@@ -1,0 +1,36 @@
+Codigo HTML
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" lang="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="estyle.css">
+
+</head>
+
+<body>
+  <article id="popup" class="popup">
+    <a onclick="closeDialog('popup');" class="close"></a>
+    <article id="pop">
+        <h1>Bienvenido a la presentación de Rick y Morty</h1>
+        <button id="entrarclose">Cerrar</button>
+    </article>
+  </article>
+  <nav>
+    <h1>Personajes de Rick and Morty</h1>
+    <input type="text" id="search-input" placeholder="Buscar por nombre">
+    <button id="search-button">Buscar</button>
+    <button id="reset-button">Reset</button>
+  </nav>
+
+  <div id="character-list"></div>
+  </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

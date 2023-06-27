@@ -1,0 +1,149 @@
+Codigo CSS
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+.popup {
+  background-color: #faeeee;
+  color: black;
+  height: 245px;
+  left: 50%;
+  padding: 20px;
+  position: fixed;
+  /* right: 30%;*/
+  top: 25%;
+  width: 200px;
+  z-index: 101;
+  -moz-box-shadow: 0px 0px 10px 1px #888888;
+  -webkit-box-shadow: 0px 0px 10px 1px #888888;
+  box-shadow: 0px 0px 10px 1px #888888;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.overlay {
+  background: #cf0f0f;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  opacity: 0.5;
+}
+
+a.close {
+  background: url("cancel.png") repeat scroll left top transparent;
+  cursor: pointer;
+  float: right;
+  height: 26px;
+  left: 32px;
+  position: center;
+  top: -33px;
+  width: 26px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"],
+button {
+  margin: 10px;
+}
+
+#character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div {
+
+  background: white;
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0% {
+    background: white;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    background: white;
+    left: 200px;
+    top: 0px;
+  }
+
+  50% {
+    background: white;
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    background: white;
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    background: white;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.character-card {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.character-card img {
+  width: 100%;
+  height: auto;
+}
+
+.character-card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.character-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+
+
+}
+
+/* Agregado: Definición de la animación de zoom en hover */
+.character-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+#entrarclose {
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pop {
+  display: none;
+}
